@@ -9,8 +9,8 @@ nav{
   display:flex;
   padding: 2% 4%;
   justify-content: space-between;
-  align-items: center;
-  background-color: white;
+  align-items:center;
+  background-color:white;
 }
 
 /*image size*/
@@ -30,7 +30,7 @@ nav img{
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
-  position: relative;
+  position:relative;
 }
 
 /* font size,color*/
@@ -39,9 +39,6 @@ nav img{
   text-decoration: none;
   font-size: 16px;
 }
-
-
-
 
 /* Buttons Layout */
 .nav-buttons {
@@ -77,39 +74,40 @@ nav img{
 
 }
 
-
-
-/*second div*/
-
-.left {
-    flex: 1.1;
+.hero {
+    background-color:#E0F8F2;
     padding: 70px 0;
     padding-left: 50px;
-    background-color: #E0F8F2;
 }
 
-/*Headline font style,size*/
-.headline {
-    font-size: 64px;
-    font-weight: 800;
-    line-height: 1;
+.hero-inner {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
+    align-items: center;
+    justify-content: space-between;
 }
-/*diff.font style*/
-.handwritten {
-    font-family: "Brush Script MT", cursive;
+
+.hero-left h1 {
+    font-size: 54px;
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlight {
+    color: #008B7C;
     font-size: 60px;
-    color: #0fb39a;
+    font-weight: bold;
+    font-family:'shadows into light',cursive ;
 }
-/*description*/
-.sub {
-    margin: 20px 0;
-    color: #555;
-    max-width: 500px;
+
+.subtext {
     font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
 }
+
+
 /*button*/
 .cta-row {
     display: flex;
@@ -153,10 +151,10 @@ nav img{
 /* PRODUCT IMAGE */
 .product-card {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 60%;
-    width: 400px;
-    transform: rotate(25deg);
+    width: 550px;
+    transform: rotate(15deg);
     
 }
 
@@ -196,12 +194,16 @@ nav img{
     gap: 6px;
     align-items: first baseline;
     height: 45px;
+    border: #000;
 }
+
 
 .bar {
     width: 14px;
     background: #00bfa5;
     border-radius: 6px;
+    border-color: #000;
+    outline-color: #000;
 }
 
 /* second  */
@@ -209,6 +211,7 @@ nav img{
 .second{
     flex: 1.1;
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 .brands{
@@ -218,10 +221,11 @@ nav img{
     font-size: 25px;
     top: 50;
     left: 50;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 .different {
-    font-family: "Brush Script MT", cursive;
+    font-family: 'shadows into light', cursive;
     font-size: 25px;
     color: #0fb39a;
 }
@@ -238,9 +242,10 @@ nav img{
 .second-grid{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .second-items{
@@ -276,17 +281,19 @@ nav img{
     font-size: 36px;
     font-weight: 700;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .third h3 {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 600;
     margin: 10px 0 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .clr {
     color: #0fb39a;
-    font-style: italic;
+    font-family: 'shadows into light', cursive;
     font-weight: 700;
 }
 
@@ -302,6 +309,9 @@ nav img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .big-number {
@@ -309,6 +319,8 @@ nav img{
   font-weight: 800;
   margin: 0;
   color: #222;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
 
 .desc {
@@ -320,7 +332,7 @@ nav img{
 
 /* Bar Chart Styles */
 .chart-box .bars {
-  display: flex;
+  display:flex;
   gap: 20px;
   align-items: flex-end;
   height: 180px;
@@ -339,15 +351,23 @@ nav img{
 }
 
 .bar-direct {
-  height: 100%;
+  height: 70%;
   background: #ff7e3d;
   color: #fff;
+  border: none;
+  box-shadow: 5px 5px 0 rgba(12, 11, 11, 0.836);
+
 }
 
 .bar-email {
-  height: 33%;
+  height: 20%;
+  width: 30%;
   background: #d9d9d9;
   color: #333;
+  text-align: center;
+  border: none;
+  box-shadow: 5px 5px 0 rgba(12, 11, 11, 0.836);
+
 }
 
 /* four */
@@ -359,25 +379,30 @@ nav img{
 }
 
 .four h2 {
-    font-size: 36px;
+    font-family:'Inter', Helvetica;
+    line-height: 50px;
+    letter-spacing: -2px;
+    font-style: bold;
+    font-size: 45px;
     font-weight: 700;
     margin: 0;
+    
 }
 
 .diff-fnt{
     color: #0fb39a;
-    font-style: italic;
+    font-family: 'shadows into light', cursive;
     font-weight: 700;
 }
 
 .fleft {
    flex: 1.1;
-   padding: 70px 0;
+   padding: 70px 20px;
 
 }
 
 .hd {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 800;
     line-height: 1;
     display: flex;
@@ -388,69 +413,89 @@ nav img{
 }
 
 .stl-fnt {
-    font-family: "Brush Script MT", cursive;
+    font-family: 'shadows into light', cursive;
     font-size: 30px;
     color: #0fb39a;
 }
 
 .subj {
-    margin: 20px 0;
+    margin: 40px 0;
     color: #555;
     max-width: 500px;
     font-size: 18px;
+    text-align: left;
+    padding-left: 40px;
+    
 }
 
-
-
-
-
+.det1{
+   margin: 40px 0;
+    color: #555;
+    max-width: 500px;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 60px;
+}
 
 
 .fright {
    flex: 1.1;
    padding: 70px 0;
-
+   padding-left: 40px;
 }
 
 .hd-r{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 800;
     line-height: 1;
     display: flex;
     flex-direction:column;
     gap: 6px;
     text-align:left;
-    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .stl-fnts {
-    font-family: "Brush Script MT", cursive;
+    font-family: 'shadows into light', cursive;
     font-size: 30px;
     color: #0fb39a;
 }
 
-.subjs {
-    margin: 20px 0;
+.subjs{
+    margin: 40px 0;
     color: #555;
     max-width: 500px;
     font-size: 18px;
+    text-align:left;
+    padding-right: 40px;
 }
 
 
+.det2{
+  margin: 40px 0;
+    color: #555;
+    max-width: 500px;
+    font-size: 16px;
+    text-align: left;
+    padding-right: 60px;
+}
 
-.hd-l{
+.flast {
+   flex: 1.1;
+   padding: 70px 0;
+   padding-right: 40px;
+}
+.hdl{
     font-size: 30px;
     font-weight: 800;
     line-height: 1;
     display: flex;
-    flex-direction:column;
     gap: 6px;
     text-align:left;
     margin-left: 40px;
 }
-
 .styl-fnts {
-    font-family: "Brush Script MT", cursive;
+    font-family: 'shadows into light', cursive;
     font-size: 30px;
     color: #0fb39a;
 }
@@ -460,13 +505,24 @@ nav img{
     color: #555;
     max-width: 500px;
     font-size: 18px;
+    text-align:left;
+    padding-left: 40px;
 }
 
+.det3{
+  margin: 40px 0;
+    color: #555;
+    max-width: 500px;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 40px;
+}
 
 .ct-row {
     display: flex;
     align-items: center;
     gap: 20px;
+    position: absolute;
 }
 .bt {
     padding: 10px 20px;
@@ -503,7 +559,7 @@ nav img{
   font-size: 30px;
   margin: 0 0 40px;
   color: #00a58a;             
-  font-family: "Caveat", cursive;
+  font-family: 'shadows into light', cursive;
 }
 
 
@@ -597,37 +653,6 @@ nav img{
   margin-bottom: 16px;
 }
 
-/*
-.feature-card {
-  background: #f3fff7;
-  border-radius: 14px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  max-width: 340px;
-  font-family: Arial, sans-serif;
-}
-
-.feature-card img.feature-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 16px;
-}
-
-.feature-card h3 {
-  margin: 10px 0 8px;
-  font-size: 1.2rem;
-  color: #1a3a2a;
-}
-
-.feature-card p {
-  margin: 0;
-  color: #445;
-  line-height: 1.5;
-}
-*/
-
-
 
 
 
@@ -660,12 +685,15 @@ nav img{
 .steps h1 {
   font-size: 32px;
   font-weight: 700;
+  text-align: center;
 }
 
 .steps h2 {
   color: #1cac9c;
   font-size: 26px;
   margin-bottom: 40px;
+  text-align: center;
+  font-family:'shadows into light', cursive;
 }
 
 .step-list .step {
@@ -705,6 +733,7 @@ nav img{
 
 .dtc {
   color: #1cac9c;
+  font-family:'shadows into light', cursive;
 }
 
 .cards {
@@ -740,12 +769,15 @@ nav img{
 }
 
 .case-left img {
-  width: 250px;
+  width: 400px;
+  height: 400px;
+  margin-top: 5.25px;
   margin-bottom: 20px;
 }
 
 .case-right h1 {
   font-size: 32px;
+  text-align: right;
 }
 
 .stats {
@@ -789,6 +821,8 @@ nav img{
 .right img {
   width: 250px;
   border-radius: 12px;
+  top: 25%;
+    left: 60%;
 }
 
 
@@ -798,7 +832,9 @@ nav img{
   text-align: center;
 }
 
-.green { color: #1cac9c; }
+.green { color: #1cac9c;
+font-family:'shadows into light', cursive; 
+}
 
 .trend-cards {
   display: flex;
@@ -807,17 +843,16 @@ nav img{
 }
 
 .t-card img {
-  width: 260px;
+  width: 300px;
   border-radius: 12px;
+  height: 250px;
 }
 
 .t-card p {
   font-weight: 600;
   margin-top: 10px;
+  font-family:Arial, Helvetica, sans-serif;
 }
-
-
-
 
 
 
